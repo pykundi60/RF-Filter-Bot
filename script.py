@@ -9,10 +9,14 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
     HELP_TXT = """Hey {}
 
-<b>Here Is The Help For My Commands.</b>"""
+<b>Here Is The Help For My Commands.</b>
+
+/start - C𝗁𝖾𝖼𝗄 W𝗁𝖾𝗍𝗁𝖾𝗋 a𝗆 O𝗇𝗅𝗂𝗇𝖾 
+/help - G𝖾𝗍 T𝗁𝗂𝗌 H𝖾𝗅𝗉 M𝖾𝗌𝗌𝖺𝗀𝖾
+/about - A𝖻𝗈𝗎𝗍 M𝖾"""
 
     ABOUT_TXT = """<b>➥ My name: {}
-➥ Creator: <a href='https://t.me/Y2say'>Dhanush TG</a>
+➥ Creator: <a href='https://t.me/Y2say'>Dhanush-TG</a>
 ➥ Library: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 ➥ Language: Python 𝟹
 ➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
@@ -20,18 +24,20 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 ➥ Build Status: v2.0.1 [ Beta ]"""
 
     SOURCE_TXT = """<b>Source:</b>
-Dhanuah is not a Open source project.
+Dhanush is not a Open source project.
 
 <b>DEVS:</b>
 - <a href='https://t.me/Naveen_TG'>Naveen-TG</a>
-"""
+
+<b>SUPPORT GROUP</b>
+- <a href='https://t.me/TamilMV_Collections'>TamilMV Collections</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Dhanush should have admin privillage.
+1. Dhamush should have admin privillage.
 2. Only admins can add filters in a chat.
 3. Alert buttons have a limit of 64 characters.
 
@@ -43,7 +49,7 @@ Dhanuah is not a Open source project.
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Dhanush support both url and alert inline buttons.
+- Dhanush Support both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
@@ -63,12 +69,13 @@ You can also customise the contents of your message with contextual data. For ex
 <b>Supported fillings:</b>
 - <code>{first}</code>: The user's first name.
 - <code>{last}</code>: The user's last name.
+- <code>{fullname}</code>: The user's full name.
 - <code{username}</code>: The user's username.
 - <code>{mention}</code>: Mentions the user with their firstname.
 - <code>{id}</code>: The user's ID.
 - <code>{dcid}</code>: The user's DC ID.
 - <code>{chatname}</code>: The chat's name.
-- <code>{query}</code>: Any Replied Message.
+- <code>{query}</code>: Any Message Text.
 
 <b>Example:</b>
 <b>- Save a filter using the mention.</b>
@@ -93,10 +100,37 @@ You can also customise the contents of your message with contextual data. For ex
 2. Send <code>/connect</code> for connecting me to ur PM
 
 <b>Commands and Usage:</b>
-• /connect  - connect a particular chat to your PM.
+ /connect  - connect a particular chat to your PM.
 • /disconnect  - disconnect from a chat.
 • /connections - list all your connections."""
 
+    COVID_TXT = """<b><u>𝖢𝗈𝗏𝗂𝖽 19 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇</u><b/>
+
+- It is Used to Find 𝖢𝗈𝗋𝗈𝗇𝖺 I𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝗈𝖿 Y𝗈𝗎𝗋 C𝗈𝗎𝗇𝗍𝗋𝗒 / 𝖳𝗈 𝗄𝗇𝗈𝗐 𝗍𝗁𝖾 𝖼𝗈𝗏𝗂𝖽 𝗂𝗇𝖿𝗈 𝗈𝖿 𝖺𝗇𝗒 𝖼𝗈𝗎𝗇𝗍𝗋𝗒            
+- 𝖢𝗈𝗎𝗅𝖽 get True and current details and cases
+     
+<b>NOTE:</b>
+
+1. Users Can Use this to know the Current COVID Info
+2. All Users of Dhanush can access this Feature
+
+<b>𝖢𝗈𝗆𝗆𝖺𝗇𝖽 and Usage</b>
+• /covid (country Name) - 𝖦𝖾𝗍 𝗂𝗇𝖿𝗈 𝖺𝖻𝗈𝗎𝗍 𝖼𝗈𝗏𝗂𝖽 𝖼𝖺𝗌𝖾𝗌 𝗂𝗇 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒
+
+<b>𝖴𝗌𝖺𝗀𝖾</b>
+- 𝖢𝗈𝗎𝗅𝖽 𝖻𝖾 𝗎𝗌𝖾𝖽 𝗂𝗇 𝗉𝗆 𝖺𝗇𝖽 𝗀𝗋𝗈𝗎𝗉𝗌."""
+
+    STICKER_TXT ="""Help: <b>StickerID</b>
+
+- It is Used to get the id of the stickers
+- Can get instant and unexpirable ids
+
+<b>Commands and Usages</b>
+• /stickerid - Reply to a Sticker to get the ids 
+
+<b>Usages</b>
+𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 Use Commands 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
+     
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
 <b>Select a filters type Below:</b>"""
@@ -122,7 +156,7 @@ Do as you wish with telegra.ph module!
 • /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
 
 <b>NOTE:</b>
-• Dhanush should have admin privillage.
+• Dhansuh should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -134,16 +168,6 @@ Get information about something!
 • /id - get id of a specified user.
 • /info  - get information about a user.
 • /json - get the json details of a message.
-
-<b>NOTE:</b>
-• Dhansuh should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    TORRENT_TXT = """Help: <b>Torrent Search</b>
-
-<b>Commands and Usage:</b>
-• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
 
 <b>NOTE:</b>
 • Dhanush should have admin privillage.
@@ -248,7 +272,7 @@ This module only works for my admins
 
     FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
 
-__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
+__🗣 In Order To Get The Movie Requested By You in Our Groups, You Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
 
 **👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
 
@@ -279,7 +303,7 @@ Some URLs is Shortner
 <code>/short https://t.me/josprojects</code>
 
 <b>NOTE:</b>
-• Dhanush should have admin privillage.
+• Dhamush should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -330,13 +354,13 @@ There Is Nothing To Know More. Send Me The Limit Of Your Password.
 
     SHARE_TXT = """Help: <b>Sharing Text Maker</b>
 
-a bot to create a link to share text in the telegram.
+A bot to create a link to share text in the telegram.
 
 <b>Commands and Usage:</b>
 • /share (text or reply to message)
 
 <b>NOTE:</b>
-• Dhanush should have admin privillage.
+• Dhansuh should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -377,4 +401,3 @@ Name - {}"""
       
     STATUS = """{}\nChat Member Status**\n\n```recently``` - {}\n```within_week``` - {}\n```within_month``` - {}\n```long_time_ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}
 """
-
