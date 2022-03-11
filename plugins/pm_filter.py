@@ -93,11 +93,12 @@ async def give_filter(client,message):
                 except Exception as e:
                     print(e)
                 break 
-    else:
+   
+   else:
         if FILTER_MODE.get(str(message.chat.id)) == "False":
             return
-    else:
-        await auto_filter(client, message)   
+        else:
+            await auto_filter(client, message)   
 
 
 @Client.on_callback_query(filters.regex(r"^next"))
