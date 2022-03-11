@@ -112,6 +112,15 @@ You can also customise the contents of your message with contextual data. For ex
  /connect  - connect a particular chat to your PM.
 • /disconnect  - disconnect from a chat.
 • /connections - list all your connections."""
+    
+    TORRENT_TXT = """Help: <b>Torrent Search</b>
+
+<b>Commands and Usage:</b>
+• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
+<b>NOTE:</b>
+• IMDb should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
 
     COVID_TXT = """<b><u>𝖢𝗈𝗏𝗂𝖽 19 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇</u><b/>
 
