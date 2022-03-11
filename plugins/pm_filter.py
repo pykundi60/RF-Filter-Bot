@@ -96,9 +96,7 @@ async def give_filter(client,message):
    
     else:
         if FILTER_MODE.get(str(message.chat.id)) == "False":
-            return
-        else:
-            await auto_filter(client, message)   
+            return await auto_filter(client, message)   
 
 
 
