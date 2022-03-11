@@ -90,6 +90,15 @@ You can also customise the contents of your message with contextual data. For ex
 3. Forward the last message to me with quotes.
  I'll add all the files in that channel to my db."""
 
+    TORRENT_TXT = """Help: <b>Torrent Search</b>
+
+<b>Commands and Usage:</b>
+• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
+<b>NOTE:</b>
+• IMDb should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
