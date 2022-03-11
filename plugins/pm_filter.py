@@ -522,25 +522,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Gtrans', callback_data='gtrans'),
             InlineKeyboardButton('Info', callback_data='info'),
             ],[
+            InlineKeyboardButton('Inline', callback_data='inline'),
             InlineKeyboardButton('Memes', callback_data='memes'),
-            InlineKeyboardButton('Paste', callback_data='paste'),
-            InlineKeyboardButton('Password Gen', callback_data='genpassword'),
+            InlineKeyboardButton('Music', callback_data='music'),
             ],[
+            InlineKeyboardButton('Password', callback_data='genpassword'),
+            InlineKeyboardButton('paste', callback_data='paste'),
             InlineKeyboardButton('Pin', callback_data='pin'),
+            ],[
             InlineKeyboardButton('Purge', callback_data='purge'),
             InlineKeyboardButton('Restric', callback_data='restric'),
-            ],[
             InlineKeyboardButton('Search', callback_data='search'),
+            ],[
             InlineKeyboardButton('Share Text', callback_data='sharetext'),
-            InlineKeyboardButton('Music', callback_data='music'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stickerid'),
+            InlineKeyboardButton('Sudo', callback_data='admin'),
             ],[
             InlineKeyboardButton('TT-Speech', callback_data='tts'),
             InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('Url Shortner', callback_data='shortner'),
+            InlineKeyboardButton('Torrent', callback_data='torrent'),
             ],[
+            InlineKeyboardButton('Url Shortner', callback_data='shortner'),
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stickerid')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
