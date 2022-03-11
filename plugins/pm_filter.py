@@ -516,35 +516,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Admin', callback_data='admin'),
             InlineKeyboardButton('Connect', callback_data='coct'),
-            InlineKeyboardButton('Filters', callback_data='auto_manual'),
+            InlineKeyboardButton('Filters', callback_data='auto_manual')
             ],[
             InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
             InlineKeyboardButton('Gtrans', callback_data='gtrans'),
-            InlineKeyboardButton('Info', callback_data='info'),
+            InlineKeyboardButton('Info', callback_data='info')
             ],[
             InlineKeyboardButton('Inline', callback_data='inline'),
             InlineKeyboardButton('Memes', callback_data='memes'),
-            InlineKeyboardButton('Music', callback_data='music'),
+            InlineKeyboardButton('Music', callback_data='music')
             ],[
             InlineKeyboardButton('Password', callback_data='genpassword'),
             InlineKeyboardButton('paste', callback_data='paste'),
-            InlineKeyboardButton('Pin', callback_data='pin'),
+            InlineKeyboardButton('Pin', callback_data='pin')
             ],[
             InlineKeyboardButton('Purge', callback_data='purge'),
             InlineKeyboardButton('Restric', callback_data='restric'),
-            InlineKeyboardButton('Search', callback_data='search'),
+            InlineKeyboardButton('Search', callback_data='search')
             ],[
             InlineKeyboardButton('Share Text', callback_data='sharetext'),
             InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stickerid'),
-            InlineKeyboardButton('Sudo', callback_data='admin'),
+            InlineKeyboardButton('Sudo', callback_data='admin')
             ],[
             InlineKeyboardButton('TT-Speech', callback_data='tts'),
             InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('Torrent', callback_data='torrent'),
+            InlineKeyboardButton('Torrent', callback_data='torrent')
             ],[
             InlineKeyboardButton('Url Shortner', callback_data='shortner'),
             InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('« Back', callback_data='start'),
+            InlineKeyboardButton('🔰 Status', callback_data='stats')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
