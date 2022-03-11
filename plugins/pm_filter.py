@@ -543,8 +543,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Torrent', callback_data='torrent')
             ],[
             InlineKeyboardButton('Url Shortner', callback_data='shortner'),
+            InlineKeyboardButton('🔰 Status', callback_data='stats'),
             InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('🔰 Status', callback_data='stats')
             ],[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
@@ -887,7 +887,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about'),
+            InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Refresh ⧖', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
