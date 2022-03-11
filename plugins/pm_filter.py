@@ -93,7 +93,6 @@ async def give_filter(client,message):
                 except Exception as e:
                     print(e)
                 break 
-
     else:
         if FILTER_MODE.get(str(message.chat.id)) == "False":
             return
