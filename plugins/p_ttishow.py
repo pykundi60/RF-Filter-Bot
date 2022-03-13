@@ -53,8 +53,7 @@ async def save_group(bot, message):
                 InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials')
             ],
             [
-                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-                InlineKeyboardButton('Close ✗', callback_data="close_data"),
+                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
                 if (temp.MELCOW).get('welcome') is not None:
