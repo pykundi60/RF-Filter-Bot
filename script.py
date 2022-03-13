@@ -33,10 +33,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 Dhanush is not a Open source project.
 
 <b>DEVS:</b>
-- <a href='https://t.me/Naveen_TG'>Naveen-TG</a>
-
-<b>SUPPORT GROUP</b>
-- <a href='https://t.me/TamilMV_Collections'>TamilMV Collections</a>"""
+- <a href='https://t.me/Naveen_TG'>Naveen-TG</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
