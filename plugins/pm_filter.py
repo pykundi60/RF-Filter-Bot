@@ -535,20 +535,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙎𝙚𝙖𝙧𝙘𝙝', callback_data='search')
             ],[
             InlineKeyboardButton('𝙎𝙝𝙖𝙧𝙚 𝙏𝙚𝙭𝙩', callback_data='sharetext'),
-            InlineKeyboardButton('𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝘿', callback_data='stickerid')
+            InlineKeyboardButton('𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝘿', callback_data='stickerid'),
             InlineKeyboardButton('𝙎𝙪𝙙𝙤', callback_data='admin')
             ],[
             InlineKeyboardButton('𝙏𝙏𝙎', callback_data='tts'),
-            InlineKeyboardButton('𝙏𝙂𝙧𝙖𝙥𝙝', callback_data='tgraph')
+            InlineKeyboardButton('𝙏𝙂𝙧𝙖𝙥𝙝', callback_data='tgraph'),
             InlineKeyboardButton('𝙏𝙤𝙧𝙧𝙚𝙣𝙩', callback_data='torrent')
             ],[
             InlineKeyboardButton('𝙐𝙧𝙡 𝙎𝙝𝙤𝙧𝙩𝙚𝙧', callback_data='shortner'),
             InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙪𝙨', callback_data='stats'),
-            InlineKeyboardButton('𝙕𝙤𝙢𝙗𝙞𝙚𝙨', callback_data='zombies'),
+            InlineKeyboardButton('𝙕𝙤𝙢𝙗𝙞𝙚𝙨', callback_data='zombies')
             ],[
             InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
-            InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='start')
-            InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩', callback_data='about'),
+            InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='start'),
+            InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
