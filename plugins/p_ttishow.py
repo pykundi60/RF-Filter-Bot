@@ -50,9 +50,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 buttonrs = [
             [
-                InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials')
-            ],
-            [
+                InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials'),
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
