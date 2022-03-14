@@ -25,8 +25,6 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
 ➥ 𝘿𝙖𝙩𝙖 𝘽𝙖𝙨𝙚 : <a href='https://www.mongodb.com/'>MongoDB</a>
 
-➥ 𝙎𝙤𝙪𝙧𝙘𝙚 : <a href='https://github.com/Naveen-TG'>GitHub</a>
-
 ➥ 𝘽𝙤𝙩 𝙎𝙚𝙧𝙫𝙚𝙧 : <a href='https://heroku.com'>Heroku</a>
 
 ➥ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨 : v2.0.1 [ Beta ]"""
