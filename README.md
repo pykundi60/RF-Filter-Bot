@@ -1,4 +1,4 @@
-# Telegram Movie Bot
+# Dhanush TG Bot
 
 ## Features
 
