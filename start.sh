@@ -1,5 +1,11 @@
-echo "Cloning Repo, Please Wait..."
-git clone -b master https://github.com/Naveen-TG/Dhanush.git /Dhanush
+if [ -z $UPSTREAM_REPO ]
+then
+  echo "Cloning Repo, Please Wait..."
+  git clone -b master https://github.com/Naveen-TG/Dhanush.git /Dhanush
+else
+  echo "Cloning Custom Repo from $UPSTREAM_REPO "
+  git clone $UPSTREAM_REPO /Dhanush
+fi
 cd /Dhanush 
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
