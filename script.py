@@ -296,10 +296,10 @@ This module only works for my admins
 <b>🆓 𝙏𝙤𝙩𝙖𝙡 𝙎𝙩𝙤𝙖𝙜𝙚 : </b> <code>{}</code> MiB
 
 
-My Server Status 🍀
+𝙈𝙮 𝙎𝙚𝙧𝙫𝙚𝙧 𝙎𝙩𝙖𝙩𝙪𝙨 🍀
 
-💻 CPU Usage :</b> {}%
-☄️ RAM Usage :</b> {}%"""
+💻 𝘾𝙋𝙐 𝙐𝙨𝙖𝙜𝙚 :</b> {}%
+☄️ 𝙍𝘼𝙈 𝙐𝙨𝙖𝙜𝙚 :</b> {}%"""
 
     FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
 
