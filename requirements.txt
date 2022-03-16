@@ -13,6 +13,7 @@ aiofiles
 requests
 pyshorteners
 bs4
+psutil
 imdbpy
 youtube-search-python==1.4.6
 youtube_search
