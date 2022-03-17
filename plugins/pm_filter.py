@@ -499,13 +499,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢"
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▢"
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▣"
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
         await query.message.edit_text(
             text=Script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -554,13 +560,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢"
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▢"
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▣"
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
         await query.message.edit_text(
             text=Script.HELP_TXT.format(query.from_user.mention),
@@ -578,13 +590,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢"
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▢"
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
         await query.message.edit_text(
-            text="▣▣▣"
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        await query.message.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
         await query.message.edit_text(
             text=Script.ABOUT_TXT.format(temp.B_NAME),
