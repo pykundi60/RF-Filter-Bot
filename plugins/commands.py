@@ -85,6 +85,9 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍𝙎𝙚𝙖𝙧𝙘𝙝', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🛠️ 𝙃𝙚𝙡𝙥', callback_data='help')
+            ],[
+            InlineKeyboardButton('🕵️ 𝙊𝙬𝙣𝙚𝙧', url='https://t.me/Naveen_TG'),
+            InlineKeyboardButton('⭕️ 𝘼𝙗𝙤𝙪𝙩', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
