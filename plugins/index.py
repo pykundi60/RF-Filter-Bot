@@ -4,7 +4,7 @@ import logging, asyncio, re
 from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
-from config import ADMINS, LOG_CHANNEL, CURRENT, CANCEL
+from info import ADMINS, LOG_CHANNEL, CURRENT, CANCEL
 from LuciferMoringstar_Robot.database.autofilter_db import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 logger = logging.getLogger(__name__)
