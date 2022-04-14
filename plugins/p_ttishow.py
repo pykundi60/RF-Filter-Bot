@@ -44,8 +44,9 @@ async def save_group(bot, message):
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️</b>",
-            reply_markup=reply_markup)
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️</b>"
+        )
+            
     else:
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
@@ -62,8 +63,8 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_sticker(
-                sticker="CAACAgUAAxkBAAIMvmIM7BVb9Jysuazt7s7WvczPXiBxAAIVAQACyJRkFGZEMKKnFWwTHgQ",
-                reply_markup=InlineKeyboardMarkup(buttonrs))
+                sticker="CAACAgUAAxkBAAIMvmIM7BVb9Jysuazt7s7WvczPXiBxAAIVAQACyJRkFGZEMKKnFWwTHgQ")
+                
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
