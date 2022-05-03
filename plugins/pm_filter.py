@@ -4,6 +4,7 @@ import asyncio
 import re
 import ast
 
+from pyrogram.types import InputMediaPhoto
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from script import Script
 import pyrogram
