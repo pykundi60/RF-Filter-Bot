@@ -1085,16 +1085,31 @@ async def auto_filter(client, msg, spoll=False):
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
-            await message.delete()
+            await hmm.edit("Closed")
+            await client.edit_message_media(
+                chat_id=message.chat.id,
+                message_id=hehe.message_id,
+                media=InputMediaPhoto("https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg")
+            )
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
-            await msg.delete()
+            await fek.edit("Closed")
+            await client.edit_message_media(
+                chat_id=message.chat.id,
+                message_id=hehe.message_id,
+                media=InputMediaPhoto("https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg")
+            )
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
-        await msg.delete()
+        await fuk.edit("Closed")
+        await client.edit_message_media(
+            chat_id=message.chat.id,
+            message_id=hehe.message_id,
+            media=InputMediaPhoto("https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg")
+        )
     if spoll:
         await msg.message.delete()
 
