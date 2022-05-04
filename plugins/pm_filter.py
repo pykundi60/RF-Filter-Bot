@@ -1074,7 +1074,12 @@ async def auto_filter(client, msg, spoll=False):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
-            await message.delete()
+            await hehe.edit("Closed")
+            await client.edit_message_media(
+                chat_id=message.chat.id,
+                message_id=hehe.message_id,
+                media=InputMediaPhoto("https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg")
+            )
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
