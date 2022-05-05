@@ -1079,7 +1079,7 @@ async def auto_filter(client, msg, spoll=False):
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.id
+                reply_to_message_id=message.message_id
             )
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
@@ -1091,7 +1091,7 @@ async def auto_filter(client, msg, spoll=False):
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.id
+                reply_to_message_id=message.message_id
             )
         except Exception as e:
             logger.exception(e)
@@ -1102,7 +1102,7 @@ async def auto_filter(client, msg, spoll=False):
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.id
+                reply_to_message_id=message.message_id
             )
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
@@ -1112,7 +1112,7 @@ async def auto_filter(client, msg, spoll=False):
             chat_id=message.chat.id,
             photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
             caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-            reply_to_message_id=message.id
+            reply_to_message_id=message.message_id
         )
     if spoll:
         await msg.message.delete()
