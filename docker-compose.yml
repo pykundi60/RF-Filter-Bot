@@ -3,11 +3,16 @@ services:
   shop:
     build: .
     environment:
-      API_ID: $API_ID
-      API_HASH: $API_HASH
-      BOT_TOKEN: $BOT_TOKEM
-      DATABASE_URI: $DATABASE_URI
-      CHANNELS: $CHANNELS
-      DATABASE_NAME: $DATABASE_NAME
-      ADMINS: $ADMINS
-      LOG_CHANNEL: $LOG_CHANNEL
+      BOT_TOKEN: 5071513445:AAHu03aJqQ2728J6RbYFF23JlYXG3JtYa0g
+      API_ID: 8967766
+      API_HASH: 505dc1f394f59c8a55b1aa798a0715f9
+      CHANNELS: -1001642817829
+      ADMINS: 1989750989
+      PICS: https://telegra.ph/file/17c5eaa6c1e1bb5556608.jpg
+      LOG_CHANNEL: -1001642817829
+      AUTH_USERS: 1989750989
+      AUTH_CHANNEL: -1001642817829
+      DATABASE_URI: mongodb+srv://Hacker999:selvan868@cluster0.z27ur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+      DATABASE_NAME: Hacker999
+      COLLECTION_NAME: Telegram_files
+      IMDB: True
