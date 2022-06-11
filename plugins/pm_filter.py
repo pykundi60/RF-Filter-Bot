@@ -517,41 +517,41 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('help')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝘼𝙙𝙢𝙞𝙣', callback_data='admin'),
-            InlineKeyboardButton('𝘾𝙤𝙣𝙣𝙚𝙘𝙩', callback_data='coct'),
-            InlineKeyboardButton('𝙁𝙞𝙡𝙩𝙚𝙧𝙨', callback_data='auto_manual')
+            InlineKeyboardButton('Aᴅᴍɪɴ', callback_data='admin'),
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛ ', callback_data='coct'),
+            InlineKeyboardButton('Fɪʟᴛᴇʀs ', callback_data='auto_manual')
             ],[
-            InlineKeyboardButton('𝘾𝙤𝙫𝙞𝙙', callback_data='covid'),
-            InlineKeyboardButton('𝙂𝙩𝙧𝙖𝙣𝙨', callback_data='gtrans'),
-            InlineKeyboardButton('𝙄𝙣𝙛𝙤', callback_data='info')
+            InlineKeyboardButton('Cᴏᴠɪᴅ', callback_data='covid'),
+            InlineKeyboardButton('Gᴛʀᴀɴs', callback_data='gtrans'),
+            InlineKeyboardButton('Iɴғᴏ', callback_data='info')
             ],[
-            InlineKeyboardButton('𝙄𝙣𝙡𝙞𝙣𝙚', callback_data='inline'),
-            InlineKeyboardButton('𝙈𝙚𝙢𝙚𝙨', callback_data='memes'),
-            InlineKeyboardButton('𝙈𝙪𝙨𝙞𝙘', callback_data='music')
+            InlineKeyboardButton('Iɴʟɪɴᴇ ', callback_data='inline'),
+            InlineKeyboardButton('Mᴇᴍᴇs', callback_data='memes'),
+            InlineKeyboardButton('Mᴜsɪᴄ ', callback_data='music')
             ],[
-            InlineKeyboardButton('𝙋𝙖𝙨𝙨𝙬𝙤𝙧𝙙', callback_data='genpassword'),
-            InlineKeyboardButton('𝙋𝙖𝙨𝙩𝙚', callback_data='paste'),
-            InlineKeyboardButton('𝙋𝙞𝙣', callback_data='pin')
+            InlineKeyboardButton('Pᴀssᴡᴏʀᴅ ', callback_data='genpassword'),
+            InlineKeyboardButton('Pᴀsᴛᴇ ', callback_data='paste'),
+            InlineKeyboardButton('Pɪɴ', callback_data='pin')
             ],[
-            InlineKeyboardButton('𝙋𝙪𝙧𝙜𝙚', callback_data='purge'),
-            InlineKeyboardButton('𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩', callback_data='restric'),
-            InlineKeyboardButton('𝙎𝙚𝙖𝙧𝙘𝙝', callback_data='search')
+            InlineKeyboardButton('Pᴜʀɢᴇ ', callback_data='purge'),
+            InlineKeyboardButton('Rᴇsᴛʀɪᴄ', callback_data='restric'),
+            InlineKeyboardButton('Sᴇᴀʀᴄʜ ', callback_data='search')
             ],[
-            InlineKeyboardButton('𝙎𝙝𝙖𝙧𝙚 𝙏𝙚𝙭𝙩', callback_data='sharetext'),
-            InlineKeyboardButton('𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝘿', callback_data='stickerid'),
-            InlineKeyboardButton('𝙎𝙪𝙙𝙤', callback_data='admin')
+            InlineKeyboardButton('Sʜᴀʀᴇ Tᴇxᴛ', callback_data='sharetext'),
+            InlineKeyboardButton('Sᴛɪᴄᴋᴇʀ Iᴅ', callback_data='stickerid'),
+            InlineKeyboardButton('Sᴜᴅᴏ', callback_data='admin')
             ],[
-            InlineKeyboardButton('𝙏𝙏𝙎', callback_data='tts'),
-            InlineKeyboardButton('𝙏𝙂𝙧𝙖𝙥𝙝', callback_data='tgraph'),
-            InlineKeyboardButton('𝙏𝙤𝙧𝙧𝙚𝙣𝙩', callback_data='torrent')
+            InlineKeyboardButton('Tᴛs', callback_data='tts'),
+            InlineKeyboardButton('TGʀᴀᴘ ', callback_data='tgraph'),
+            InlineKeyboardButton('Tᴏʀʀᴇɴᴛ ', callback_data='torrent')
             ],[
-            InlineKeyboardButton('𝙐𝙧𝙡 𝙎𝙝𝙤𝙧𝙩𝙚𝙧', callback_data='shortner'),
-            InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙪𝙨', callback_data='stats'),
-            InlineKeyboardButton('𝙕𝙤𝙢𝙗𝙞𝙚𝙨', callback_data='zombies')
+            InlineKeyboardButton('Uʀʟ Sʜᴏʀᴛᴇʀ', callback_data='shortner'),
+            InlineKeyboardButton('Sᴛᴀᴛs', callback_data='stats'),
+            InlineKeyboardButton('Zᴏᴍʙɪᴇ ', callback_data='zombies')
             ],[
-            InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ ', callback_data='source'),
             InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩', callback_data='about')
+            InlineKeyboardButton('Aʙᴏᴜᴛ ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
