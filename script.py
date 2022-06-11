@@ -15,19 +15,19 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 /help - G𝖾𝗍 T𝗁𝗂𝗌 H𝖾𝗅𝗉 M𝖾𝗌𝗌𝖺𝗀𝖾
 /about - A𝖻𝗈𝗎𝗍 M𝖾"""
 
-    ABOUT_TXT = """<b>➥ 𝙈𝙮 𝙉𝙖𝙢𝙚 : {}
+    ABOUT_TXT = """<b>➥ Mʏ Nᴀᴍᴇ: {}
 
-➥ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : <a href='https://t.me/Y2say'>Dhanush-TG</a>
+➥ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/zautekm'>Zaute Km</a>
 
-➥ 𝙇𝙞𝙗𝙧𝙖𝙧𝙮 : <a href='https://docs.pyrogram.org/'>Pyrogram</a>
+➥ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 
-➥ 𝙇𝙖𝙣𝙜𝙪𝙖𝙜𝙚 : Python 𝟹
+➥ Lᴀɴɢᴜᴀɢᴇ: Python 𝟹
 
-➥ 𝘿𝙖𝙩𝙖 𝘽𝙖𝙨𝙚 : <a href='https://www.mongodb.com/'>MongoDB</a>
+➥ Dᴀᴛᴀ Bᴀsᴇ: <a href='https://www.mongodb.com/'>MongoDB</a>
 
-➥ 𝘽𝙤𝙩 𝙎𝙚𝙧𝙫𝙚𝙧 : <a href='https://heroku.com'>Heroku</a>
+➥ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://heroku.com'>Heroku</a>
 
-➥ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨 : v2.0.1 [ Beta ]"""
+➥ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.0.1 [ Beta ]"""
 
     SOURCE_TXT = """<b>Source:</b>
 Dhanush is not a Open source project.
