@@ -490,7 +490,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Add Me To Your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Help', callback_data='help')
+            InlineKeyboardButton('help', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -578,10 +578,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
             InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙨', callback_data='stats'),
-            InlineKeyboardButton('𝙃𝙚𝙡𝙥', callback_data='help')
+            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help')
             ],[
             InlineKeyboardButton('𝙃𝙤𝙢𝙚', callback_data='start'),
-            InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙚', callback_data='close_data')
+            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -608,7 +608,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "torrent":
         buttons = [[
             InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='help'),
-            InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙚 𝙭', callback_data='close_data')
+            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -680,7 +680,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙈𝙖𝙣𝙪𝙖𝙡', callback_data='manualfilter')
             ],[
             InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='help'),
-            InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙧 𝙓', callback_data='close_data')
+            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -713,7 +713,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "paste":
         buttons = [[
             InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='help'),
-            InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙚 𝙓', callback_data='close_data')
+            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1176,7 +1176,7 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="Cʟᴏsᴇ ✗", callback_data=f'spolling#{user}#close_spellcheck')])
     m = await msg.reply(f"`Hey, {msg.from_user.mention}! I couldn't find anything related to {msg.text} Did you mean any one of these below 👇 ?`", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
