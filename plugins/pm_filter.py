@@ -576,11 +576,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
-            InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙨', callback_data='stats'),
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ ', callback_data='source'),
+            InlineKeyboardButton('Sᴛᴀᴛs', callback_data='stats'),
             InlineKeyboardButton('Hᴇʟᴘ', callback_data='help')
             ],[
-            InlineKeyboardButton('𝙃𝙤𝙢𝙚', callback_data='start'),
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -630,8 +630,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "manualfilter":
         buttons = [[
-            InlineKeyboardButton('𝘽𝙪𝙩𝙩𝙤𝙣𝙨', callback_data='button'),
-            InlineKeyboardButton('𝙁𝙞𝙡𝙡𝙞𝙣𝙜𝙨', callback_data='fillings')
+            InlineKeyboardButton('Bᴜᴛᴛᴏɴs ', callback_data='button'),
+            InlineKeyboardButton('Fɪʟʟɪɴɢs ', callback_data='fillings')
             ],[
             InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='auto_manual'),
         ]]
@@ -676,8 +676,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "auto_manual":
         buttons = [[
-            InlineKeyboardButton('𝘼𝙪𝙩𝙤', callback_data='autofilter'),
-            InlineKeyboardButton('𝙈𝙖𝙣𝙪𝙖𝙡', callback_data='manualfilter')
+            InlineKeyboardButton('Aᴜᴛᴏ', callback_data='autofilter'),
+            InlineKeyboardButton('Mᴀɴᴜᴀʟ ', callback_data='manualfilter')
             ],[
             InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
