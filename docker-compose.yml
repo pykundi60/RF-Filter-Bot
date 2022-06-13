@@ -11,7 +11,7 @@ services:
       PICS: https://telegra.ph/file/17c5eaa6c1e1bb5556608.jpg
       LOG_CHANNEL: -1001642817829
       AUTH_USERS: 
-      AUTH_CHANNEL: -1001435638564
+      AUTH_CHANNEL:
       DATABASE_URI: mongodb+srv://Hacker999:selvan868@cluster0.z27ur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
       DATABASE_NAME: Hacker999
       COLLECTION_NAME: Telegram_files
