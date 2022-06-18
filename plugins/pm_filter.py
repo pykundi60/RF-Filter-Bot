@@ -1016,6 +1016,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton(text="Check PM!", url=f"https://t.me/{temp.U_NAME}"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
@@ -1068,11 +1069,11 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/TamilMV_Collections'>𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/Hollywood_Movies_Request'>𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
+            await asyncio.sleep(36000)
             await hehe.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
