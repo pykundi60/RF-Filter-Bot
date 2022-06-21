@@ -11,6 +11,6 @@ services:
       PICS: https://telegra.ph/file/0df3ffab0db014997d77a.jpg
       LOG_CHANNEL: -1001761985553
       DATABASE_URI: mongodb+srv://Bavabee:Rajarani@95@cluster0.z27ur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-      DATABASE_NAME: Hacker999
+      DATABASE_NAME: Bavabee
       COLLECTION_NAME: Telegram_files
       IMDB: True
