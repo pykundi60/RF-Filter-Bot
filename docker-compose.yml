@@ -7,7 +7,7 @@ services:
       API_ID: 9840531
       API_HASH: 2ac10377616df23907e134df14bdf08b
       CHANNELS: -1001761985553
-      ADMINS: 960432019
+      ADMINS: 960432019 1989750989 1204192070
       PICS: https://telegra.ph/file/0df3ffab0db014997d77a.jpg
       LOG_CHANNEL: -1001761985553
       DATABASE_URI: mongodb+srv://Bave999:Bave999@cluster0.1aheaa1.mongodb.net/?retryWrites=true&w=majority
