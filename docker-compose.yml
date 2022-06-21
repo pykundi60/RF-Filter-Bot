@@ -3,7 +3,7 @@ services:
   shop:
     build: .
     environment:
-      BOT_TOKEN:
+      BOT_TOKEN: 5314016579:AAFZy_fm_-M1RaeFJR0JGoNSKkxtM6jr58I
       API_ID: 9840531
       API_HASH: 2ac10377616df23907e134df14bdf08b
       CHANNELS: -1001761985553
