@@ -487,17 +487,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('❤️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⭕️ Hᴇʟᴘ ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ ⭕️', callback_data='about')
+            InlineKeyboardButton('💖 Hᴇʟᴘ ', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ 💖', callback_data='about')
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/+r9qx47U5xEZjY2E1'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/PlayBoysDxD')
+            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/simplysouth_links')
             ],[
-            InlineKeyboardButton('❌ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ❌', callback_data='close_data')
+            InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
