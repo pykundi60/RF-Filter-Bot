@@ -1021,7 +1021,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0,
 
-            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/+r9qx47U5xEZjY2E1")]
+            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/simplysouth_links")]
 
         )
     else:
@@ -1030,7 +1030,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0,
 
-            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/+r9qx47U5xEZjY2E1")]
+            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/simplysouth_links")]
 
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
