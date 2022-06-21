@@ -1,4 +1,7 @@
-# HMF Movie Bot
+# Tamizhmasters Movies Bot
+
+<p align="center">
+  <img src="https://telegra.ph/file/01f402973fff9f1219c15.jpg"
 
 ## Features
 
