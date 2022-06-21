@@ -17,7 +17,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
     ABOUT_TXT = """<b>➥ Mʏ Nᴀᴍᴇ: {}
 
-➥ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/zautekm'>Zaute Km</a>
+➥ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/simplysouth_links'>Zaute Km</a>
 
 ➥ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 
@@ -41,7 +41,7 @@ Dhanush is not a Open source project.
 <b>PLUGINS</b> : <a href='https://github.com/EvamariaTG/EvaMaria'>Eva Maria</a>
 
 <b>DEVS:</b>
-- <a href='https://t.me/Naveen_TG'>Naveen-TG</a>"""
+- <a href='https://t.me/HMF_Owner_1'>Naveen-TG</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
@@ -68,7 +68,7 @@ Dhanush is not a Open source project.
 3. Buttons should be properly parsed as markdown format.
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/josprojects)</code>
+<code>[Button Text](buttonurl:https://t.me/simplysouth_links)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
