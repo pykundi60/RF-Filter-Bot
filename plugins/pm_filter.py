@@ -495,7 +495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/simplysouth_links')
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+uaLHNgEVMwZkMmE1')
             ],[
             InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
