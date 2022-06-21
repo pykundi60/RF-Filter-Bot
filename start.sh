@@ -1,6 +1,6 @@
 echo "Cloning Repo, Please Wait..."
-git clone -b master https://github.com/Hmfhacker/HMF-movies-V2.git /HMF-movies-V2
-cd /HMF-movies-V2
+git clone -b master https://github.com/bavabee/Tamizhmasters-Movies-bot.git /Tamizhmasters-Movies-bot
+cd /Tamizhmasters-Movies-bot
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
 echo "Starting Bot, Please Wait..."
