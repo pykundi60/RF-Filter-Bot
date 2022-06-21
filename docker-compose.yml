@@ -8,7 +8,7 @@ services:
       API_HASH: 2ac10377616df23907e134df14bdf08b
       CHANNELS: -1001761985553
       ADMINS: 960432019
-      PICS: https://telegra.ph/file/fb3280910313f91b8c1d7.jpg
+      PICS: https://telegra.ph/file/0df3ffab0db014997d77a.jpg
       LOG_CHANNEL: -1001761985553
       DATABASE_URI: mongodb+srv://Hacker999:selvan868@cluster0.z27ur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
       DATABASE_NAME: Hacker999
