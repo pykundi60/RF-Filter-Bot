@@ -42,13 +42,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Shorten Bot
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'dulink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '6501edd85e9aaff0ecf776f14104888bcfc1b822')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001761985553'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'JOSPSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚 :</b><code>{file_name}</code>\n\n<b>𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚 :</b> {file_size}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "")
