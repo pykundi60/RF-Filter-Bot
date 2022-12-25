@@ -40,6 +40,9 @@ DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://Bave999:Bave999@cluste
 DATABASE_NAME = environ.get('DATABASE_NAME', 'Bave999')
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+# Shorten Bot
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'dulink.in')
+
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001761985553'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'JOSPSupport')
