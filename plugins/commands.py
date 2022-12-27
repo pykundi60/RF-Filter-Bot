@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links')
+                InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ')
             ],
             [
                 InlineKeyboardButton('🛠️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -50,8 +50,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+uaLHNgEVMwZkMmE1')
+            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/HangOverXD')
             ],[
             InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
@@ -98,8 +98,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+uaLHNgEVMwZkMmE1')
+            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/HangOverXD')
             ],[
             InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
@@ -250,11 +250,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/+uaLHNgEVMwZkMmE1')
+            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/HangOverXD')
         ],
         [
-            InlineKeyboardButton('🎬 Sᴇʀɪᴇs & Mᴏᴠɪᴇ Cʟᴜʙ 🎬', url=f'https://t.me/simplysouth_links')
+            InlineKeyboardButton('🎬 Sᴇʀɪᴇs & Mᴏᴠɪᴇ Cʟᴜʙ 🎬', url=f'https://t.me/HMF_LinkZ')
         ]
         ]
     await client.send_cached_media(
