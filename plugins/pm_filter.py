@@ -3,6 +3,7 @@ import psutil
 import asyncio
 import re
 import ast
+
 from pyrogram.types import InputMediaPhoto
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from script import Script
@@ -15,7 +16,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram.handlers import CallbackQueryHandler
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
-from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results
 from database.filters_mdb import (
@@ -106,7 +107,6 @@ async def give_filter(client,message):
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
-    api = "6501edd85e9aaff0ecf776f14104888bcfc1b822"
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
         return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬", show_alert=True)
@@ -132,7 +132,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}", api)
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -141,11 +141,11 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}", api)
+                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}", api),
+                    callback_data=f'files_#{file.file_id}',
                 ),
             ]
             for file in files
@@ -487,17 +487,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('❤️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💖 Hᴇʟᴘ ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ 💖', callback_data='about')
+            InlineKeyboardButton('⭕️ Hᴇʟᴘ ', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ ⭕️', callback_data='about')
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/simplysouth_links'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+uaLHNgEVMwZkMmE1')
+            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/+r9qx47U5xEZjY2E1'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/PlayBoysDxD')
             ],[
-            InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
+            InlineKeyboardButton('❌ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ❌', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -965,7 +965,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
 async def auto_filter(client, msg, spoll=False):
-    api = "6501edd85e9aaff0ecf776f14104888bcfc1b822"
     if not spoll:
         message = msg
         settings = await get_settings(message.chat.id)
@@ -991,7 +990,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=pre_{file.file_id}", api)
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1001,11 +1000,11 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
-                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=pre_{file.file_id}", api)
+                    callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=pre_{file.file_id}", api)
+                    callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
             for file in files
@@ -1022,7 +1021,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0,
 
-            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/simplysouth_links")]
+            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/+r9qx47U5xEZjY2E1")]
 
         )
     else:
@@ -1031,7 +1030,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0,
 
-            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/simplysouth_links")]
+            [InlineKeyboardButton(text="📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📢",url="https://t.me/+r9qx47U5xEZjY2E1")]
 
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
@@ -1074,7 +1073,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(180)
+            await asyncio.sleep(36000)
             await hehe.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
@@ -1086,7 +1085,7 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(180)
+            await asyncio.sleep(36000)
             await hmm.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
@@ -1097,7 +1096,7 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(180)
+            await asyncio.sleep(36000)
             await fek.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
@@ -1107,7 +1106,7 @@ async def auto_filter(client, msg, spoll=False):
             )
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(180)
+        await asyncio.sleep(36000)
         await fuk.delete()
         await client.send_photo(
             chat_id=message.chat.id,
