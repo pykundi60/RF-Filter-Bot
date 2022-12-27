@@ -14,9 +14,9 @@ def is_enabled(value, default):
 CURRENT = int(environ.get("SKIP", 2))
 CANCEL = False
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get("API_ID", "9840531"))
-API_HASH = environ.get("API_HASH", "2ac10377616df23907e134df14bdf08b")
-BOT_TOKEN = environ.get("BOT_TOKEN", "5066962427:AAH6AmCWgwrviVMhx9MlqahlB1sjPSNrLQI")
+API_ID = int(environ.get("API_ID", "20679463"))
+API_HASH = environ.get("API_HASH", "38796e3ba29239811c187b5ab4c1885f")
+BOT_TOKEN = environ.get("BOT_TOKEN", "5934388813:AAEGRkf7Ff9Xsh7t5PoaFdhvH0WeTKDTRNU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -24,7 +24,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0df3ffab0db014997d77a.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1989750989 960432019').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1989750989 1071999680').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001392852605').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -36,8 +36,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://Bave999:Bave999@cluster0.1aheaa1.mongodb.net/?retryWrites=true&w=majority')
-DATABASE_NAME = environ.get('DATABASE_NAME', 'Bave999')
+DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://RF999:RF999@cluster0.uaznbh4.mongodb.net/?retryWrites=true&w=majority')
+DATABASE_NAME = environ.get('DATABASE_NAME', 'RockFort')
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Shorten Bot
@@ -46,13 +46,13 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '6501edd85e9a
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001761985553'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'JOSPSupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'HangOverXD')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚 :</b><code>{file_name}</code>\n\n<b>𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚 :</b> {file_size}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🎬 Title:</b> <a href={url}>{title}</a> [{year}] —<b>{kind}</b>\n\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b><a href='https://t.me/+uzQ0M7QIQeQ2NWI9'>© IMDb (Series & Movie) Studio</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 hours to avoid copyright issues.</s>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🎬 Title:</b> <a href={url}>{title}</a> [{year}] —<b>{kind}</b>\n\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b><a href='https://t.me/+SmLLyclFqEA4MzI1'>© IMDb (Series & Movie) Studio</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 hours to avoid copyright issues.</s>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
