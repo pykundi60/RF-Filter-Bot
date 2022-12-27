@@ -45,7 +45,7 @@ URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'dulink.in')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '6501edd85e9aaff0ecf776f14104888bcfc1b822')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001761985553'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001602625217'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'HangOverXD')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
