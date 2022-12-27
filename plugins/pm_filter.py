@@ -494,8 +494,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/+r9qx47U5xEZjY2E1'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/PlayBoysDxD')
+            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/HangoverXD')
             ],[
             InlineKeyboardButton('❌ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ❌', callback_data='close_data')
         ]]
