@@ -21,11 +21,11 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "5934388813:AAEGRkf7Ff9Xsh7t5PoaFdhvH0WeTKD
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/4e420c248faed6e1c59a3.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/c1000b6518c2b623db042.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1989750989 1071999680').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001392852605').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001702894854').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 AUTH_USERS.append(1684438752)
@@ -46,7 +46,7 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '6501edd85e9a
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001602625217'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'HangOverXD')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'HMF_BotzZ')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
