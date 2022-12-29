@@ -50,8 +50,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/HangOverXD')
+            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/Rockfort_Movies007'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+5nBkr97HywVkMDc1')
             ],[
             InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
@@ -98,8 +98,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/HangOverXD')
+            InlineKeyboardButton('💛 Uᴘᴅᴀᴛᴇs', url='https://t.me/Rockfort_Movies007'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  💛', url='https://t.me/+5nBkr97HywVkMDc1')
             ],[
             InlineKeyboardButton('🖤 Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ 🖤', callback_data='close_data')
         ]]
@@ -250,11 +250,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/HMF_BotzZ'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/HangOverXD')
+            InlineKeyboardButton('⭕️ Uᴘᴅᴀᴛᴇs', url='https://t.me/Rockfort_Movies007'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ  ⭕️', url='https://t.me/+5nBkr97HywVkMDc1')
         ],
         [
-            InlineKeyboardButton('🎬 Sᴇʀɪᴇs & Mᴏᴠɪᴇ Cʟᴜʙ 🎬', url=f'https://t.me/HMF_LinkZ')
+            InlineKeyboardButton('🎬 Sᴇʀɪᴇs & Mᴏᴠɪᴇ Cʟᴜʙ 🎬', url=f't.me/Rockfort_Movies007')
         ]
         ]
     await client.send_cached_media(
