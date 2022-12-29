@@ -30,7 +30,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 ➥ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.0.1 [ Beta ]"""
 
     SOURCE_TXT = """<b>Source:</b>
-Dhanush is not a Open source project.
+HMF BotzZ is not a Open source project.
 
 𝖲𝖮𝖴𝖱𝖢𝖤 𝖢𝖮𝖣𝖤 ~ 𝖭𝖮𝖳 𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖱𝖨𝖦𝖧𝖳 𝖭𝖮𝖶</b>
 
