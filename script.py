@@ -17,7 +17,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
     ABOUT_TXT = """<b>➥ Mʏ Nᴀᴍᴇ: {}
 
-➥ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/simplysouth_links'>Zaute Km</a>
+➥ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/HMF_BotzZ'>HMF BotzZ</a>
 
 ➥ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 
@@ -34,14 +34,8 @@ Dhanush is not a Open source project.
 
 𝖲𝖮𝖴𝖱𝖢𝖤 𝖢𝖮𝖣𝖤 ~ 𝖭𝖮𝖳 𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖱𝖨𝖦𝖧𝖳 𝖭𝖮𝖶</b>
 
-<b>𝖮𝖳𝖧𝖤𝖱 𝖪𝖨𝖭𝖣 𝖡𝖮𝖳𝖲:</b>
-<b>𝖠𝖴𝖳𝖮 𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a href='https://github.com/EvamariaTG/EvaMaria'>𝖤𝗏𝖺 𝖬𝖺𝗋𝗂𝖺</a>
-<b>𝖲𝖮𝖭𝖦</b> :  <a href='https://github.com/AsmSafone/RadioPlayerV2'>𝖠𝗌𝗆𝖲𝖺𝖿𝗈𝗇𝖾</a>
-<b>𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a href='https://github.com/TroJanzHEX/Unlimited-Filter-Bot'>𝖴𝗇𝗅𝗂𝗆𝗂𝗍𝖾𝖽 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍</a>
-<b>PLUGINS</b> : <a href='https://github.com/EvamariaTG/EvaMaria'>Eva Maria</a>
-
 <b>DEVS:</b>
-- <a href='https://t.me/HMF_Owner_1'>Naveen-TG</a>"""
+- <a href='https://t.me/HMF_Owner_1'>Thiru | HMF | 🇬🇷 |</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
