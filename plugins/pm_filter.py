@@ -1075,45 +1075,26 @@ async def auto_filter(client, msg, spoll=False):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(360)
             await hehe.delete()
-            await client.send_photo(
-                chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.message_id
-            )
+
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(360)
             await hmm.delete()
-            await client.send_photo(
-                chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.message_id
-            )
+        
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(360)
             await fek.delete()
-            await client.send_photo(
-                chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-                reply_to_message_id=message.message_id
-            )
+            
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(360)
         await fuk.delete()
-        await client.send_photo(
-            chat_id=message.chat.id,
-            photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
-            caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
-            reply_to_message_id=message.message_id
-        )
+        
+
     if spoll:
         await msg.message.delete()
 
