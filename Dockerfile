@@ -1,12 +1,9 @@
-FROM python:3.8-slim-buster
-
-RUN apt update && apt upgrade -y
-RUN apt install git -y
+FROM python:3.10
 COPY requirements.txt /requirements.txt
-
 RUN cd /
+RUN apt install git -y
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /RF-Filter-Bot
 WORKDIR /RF-Filter-Bot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+CMD ["python", "bot.py"]
+
